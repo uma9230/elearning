@@ -12,11 +12,6 @@ const LoginForm = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
 
-    // if (email === "aiman@gmail.com" && password === "aiman@123") {
-    //   router.push("/dashboard");
-    // } else {
-    //   alert("Invalid username or password. Login Failed!");
-    //   }
 
     try {
       const response = await axios.post(`/api/login`, {
